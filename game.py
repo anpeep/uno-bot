@@ -5,6 +5,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
+
 class GameManager:
     def __init__(self, host):
         self.host = host
