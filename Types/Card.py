@@ -109,10 +109,10 @@ if __name__ == "__main__":
             continue
         
         elif card.special and not card.color and not card.number:
-            if (card.special) in ratios:
-                ratios[(card.special)] += 1
+            if card.special in ratios:
+                ratios[card.special] += 1
             else:
-                ratios[(card.special)] = 1
+                ratios[card.special] = 1
             continue
         
         else: print(f"unknown card: {card}")
