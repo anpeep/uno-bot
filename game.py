@@ -77,6 +77,7 @@ class GameControlView(View):
             else:
                 await interaction.response.send_message("You are already in the game.", ephemeral=True)
 
+
 class GameGameplayView(View):
     def __init__(self, host_id, guild_id):
         super().__init__()
